@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karl Francis Desalin | Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Alex Morgan, a Full Stack Developer & Product Designer building premium, modern web applications and immersive digital experiences.">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- DECORATIVE GLOWS -->
+    <div class="glow-blob glow-blob-1"></div>
+    <div class="glow-blob glow-blob-2"></div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                K<span class="logo-dot"></span>
+            </a>
+
+            <nav class="nav-menu-wrapper">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN SECTIONS -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="section hero-section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        Available for freelance
+                    </div>
+                    <h1 class="hero-title">
+                        Building the future of the <span>digital web</span>.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Hi, I'm Karl. A Full Stack Developer and Product Designer specializing in crafting
+                        high-performance interactive interfaces, clean architecture, and visually stunning web
+                        applications.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Let's Connect
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="hero-decor-ring"></div>
+                    <div class="hero-visual-wrapper">
+                        <img src="assets/hero-bg.png" alt="Abstract Art Background" class="hero-image" id="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">My Journey & Expertise</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-details reveal">
+                        <p>
+                            I bridge the gap between clean design and scalable code. Over the past three years as an IT
+                            Specialist in local government, I’ve architected and deployed custom internal systems—taking
+                            ideas from initial concept to high-scale production to solve real-world operational
+                            challenges.
+                        </p>
+                        <p>
+                            I believe web applications shouldn't just run smoothly under the hood—they should also look
+                            captivating and feel alive. My workflow centers on modern web standards, strict
+                            accessibility rules, and clean, reusable codebases.
+                        </p>
+                        <div class="hero-actions" style="margin-top: 2rem;">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        </div>
+                    </div>
+
+                    <div class="about-tabs-container glass-panel reveal" style="padding: 2rem;">
+                        <div class="tabs-header">
+                            <button class="tab-btn active" data-tab="skills">Core Skills</button>
+                            <button class="tab-btn" data-tab="education">Education</button>
+                        </div>
+
+                        <div class="tabs-content">
+                            <!-- Skills Tab Pane -->
+                            <div class="tab-pane active" id="skills">
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <i class="fa-brands fa-js"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <i class="fa-brands fa-react"></i>
+                                        <span>React / Next.js</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <i class="fa-brands fa-node-js"></i>
+                                        <span>Node.js</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <i class="fa-solid fa-code"></i>
+                                        <span>TypeScript</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <i class="fa-solid fa-database"></i>
+                                        <span>PostgreSQL</span>
+                                    </div>
+                                    <div class="skill-card">
+                                        <i class="fa-brands fa-figma"></i>
+                                        <span>Figma / UI</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Education Tab Pane -->
+                            <div class="tab-pane" id="education">
+                                <div class="timeline-mini">
+                                    <div class="timeline-mini-item">
+                                        <div class="timeline-mini-date">2018 - 2022</div>
+                                        <div class="timeline-mini-title">B.S. in Information Technology</div>
+                                        <div class="timeline-mini-subtitle">Eastern Visayas State University</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Selected Projects</h2>
+                </div>
+
+                <!-- Filter Pills -->
+                <div class="portfolio-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All Work</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card glass-panel reveal" data-category="web" data-id="1">
+                        <div class="project-thumbnail">
+                            <img src="assets/hero-bg.png" alt="SaaS Dashboard Project" class="project-img">
+                            <div class="project-overlay">
+                                <span class="project-link-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">GraphQL</span>
+                                <span class="project-tag">Chart.js</span>
+                            </div>
+                            <h3 class="project-card-title">Apex Analytics Suite</h3>
+                            <p class="project-desc">A premium enterprise real-time data analytical platform with
+                                interactive dashboard reports, dynamic filters, and customizable visualization modules.
+                            </p>
+                            <button class="project-btn">Explore Details <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-panel reveal" data-category="mobile" data-id="2">
+                        <div class="project-thumbnail">
+                            <img src="assets/hero-bg.png" alt="Crypto wallet app" class="project-img">
+                            <div class="project-overlay">
+                                <span class="project-link-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">React Native</span>
+                                <span class="project-tag">Web3.js</span>
+                                <span class="project-tag">Tailwind</span>
+                            </div>
+                            <h3 class="project-card-title">Velo Crypto Wallet</h3>
+                            <p class="project-desc">A cross-platform decentralized crypto wallet application designed
+                                for seamless token management, portfolio tracking, and instant swaps.</p>
+                            <button class="project-btn">Explore Details <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-panel reveal" data-category="design" data-id="3">
+                        <div class="project-thumbnail">
+                            <img src="assets/hero-bg.png" alt="Smart home ecosystem concept" class="project-img">
+                            <div class="project-overlay">
+                                <span class="project-link-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Figma</span>
+                                <span class="project-tag">Prototyping</span>
+                                <span class="project-tag">User Research</span>
+                            </div>
+                            <h3 class="project-card-title">Nove Smart Home</h3>
+                            <p class="project-desc">A comprehensive UI/UX case study and interactive design prototype
+                                for a smart IoT home controller ecosystem focusing on usability and dark mode
+                                aesthetics.</p>
+                            <button class="project-btn">Explore Details <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Work History</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <div class="timeline-date">2023 - Present</div>
+                            <h3 class="timeline-title">Lead Product Developer</h3>
+                            <div class="timeline-company">Quantive Technologies</div>
+                            <div class="timeline-desc">
+                                <ul>
+                                    <li>Architected robust frontend architecture using React/Next.js increasing page
+                                        load speed by 35%.</li>
+                                    <li>Led cross-functional design and development team in shipping custom UI system.
+                                    </li>
+                                    <li>Mentored junior engineers and instituted code quality guidelines across
+                                        departments.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <div class="timeline-date">2021 - 2023</div>
+                            <h3 class="timeline-title">Senior Full Stack Developer</h3>
+                            <div class="timeline-company">Aura Interactive</div>
+                            <div class="timeline-desc">
+                                <ul>
+                                    <li>Built Node.js/PostgreSQL microservices supporting 100k+ active weekly users.
+                                    </li>
+                                    <li>Designed interactive web experiences with smooth hardware-accelerated
+                                        animations.</li>
+                                    <li>Integrated various third-party payment gateways and user authorization
+                                        protocols.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <div class="timeline-date">2019 - 2021</div>
+                            <h3 class="timeline-title">UX Engineer</h3>
+                            <div class="timeline-company">Zenix Labs</div>
+                            <div class="timeline-desc">
+                                <ul>
+                                    <li>Translated complex design wireframes into highly accessible, standards-compliant
+                                        HTML/CSS/JS.</li>
+                                    <li>Conducted multiple A/B tests to optimize core conversion rates.</li>
+                                    <li>Configured CI/CD automated deployment pipelines for core staging environments.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">Let's Create Together</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <div class="contact-text">
+                            <h3>Let's talk about your next product.</h3>
+                            <p>Have an exciting project idea, a position to fill, or just want to chat about engineering
+                                and design? Drop me a message and I'll get back to you within 24 hours.</p>
+                        </div>
+
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-detail-content">
+                                    <span>Send an Email</span>
+                                    <a href="mailto:kdesalin@gmail.com">kdesalin@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-detail-content">
+                                    <span>Call / Text</span>
+                                    <a href="tel:+15550199">+63 953 248 7439</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-detail-content">
+                                    <span>Location</span>
+                                    <p>Tacloban City, Leyte, Philippines</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/z0diax" target="_blank" class="social-btn"
+                                aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/karl-francis-desalin-a30406204/" target="_blank"
+                                class="social-btn" aria-label="LinkedIn Profile"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form glass-panel reveal" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder=" " required>
+                            <label for="name" class="form-label">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder=" " required>
+                            <label for="email" class="form-label">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" placeholder=" " required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Karl Francis Desalin.</p>
+            <button class="back-to-top" id="back-to-top" aria-label="Scroll to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- PORTFOLIO DETAIL MODAL -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-wrapper glass-panel">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-img-container">
+                <img src="assets/hero-bg.png" alt="Project Large Display" class="modal-img" id="modal-img">
+            </div>
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Project Title</h3>
+            </div>
+            <div class="modal-grid">
+                <div class="modal-desc-col">
+                    <p id="modal-desc">Detailed project description goes here.</p>
+                    <h4 class="modal-features-title">Key Accomplishments</h4>
+                    <ul class="modal-features-list" id="modal-features">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+                <div class="modal-meta-col">
+                    <div class="modal-meta-item">
+                        <span>Category</span>
+                        <p id="modal-category">Web Application</p>
+                    </div>
+                    <div class="modal-meta-item">
+                        <span>Technologies</span>
+                        <div class="modal-tech-stack" id="modal-tech">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="https://github.com" target="_blank" class="btn btn-primary" id="modal-github"
+                            style="flex: 1; font-size: 0.85rem; padding: 0.7rem 1rem;">
+                            <i class="fa-brands fa-github"></i> Repository
+                        </a>
+                        <a href="https://example.com" target="_blank" class="btn btn-secondary" id="modal-live"
+                            style="flex: 1; font-size: 0.85rem; padding: 0.7rem 1rem;">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Client-Side JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
