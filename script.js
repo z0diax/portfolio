@@ -4,50 +4,80 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 1. DATA STORE FOR PROJECTS (Rich Modal Content)
     const projectsData = {
-        '1': {
-            title: 'Apex Analytics Suite',
+        'document-tracking-system': {
+            title: 'Document Tracking System',
             category: 'Web Application',
-            desc: 'Apex Analytics is a high-performance web dashboard providing real-time stream analysis and visual telemetry configurations for enterprise operations. Built to handle massive datasets with ease, it features custom WebSockets integrations, customizable widgets, and responsive layouts.',
+            desc: 'A full-featured workflow and document tracking application designed to streamline administrative operations. Built with a Flask backend and role-based permissions, it provides complete audit logs, leave tracking, automatic email alerts, and dynamic dashboards for visual analytics.',
             features: [
-                'Designed custom canvas-based charting engine for smooth 60fps renders',
-                'Integrated secure JWT and RBAC systems for multi-tier user profiles',
-                'Reduced data polling overhead by 40% using optimized GraphQL subscriptions',
-                'Implemented automatic dark/light synchronization based on device preferences'
+                'Implemented secure role-based access control (RBAC) with account approval workflows',
+                'Developed full document history and movement tracking with comprehensive audit logs',
+                'Engineered automated notification dispatch for pending leaves and EWP actions',
+                'Configured business-hour delta trackers localized to Manila timezone'
             ],
-            tech: ['Next.js', 'TypeScript', 'GraphQL', 'Chart.js', 'WebSockets', 'TailwindCSS'],
-            img: 'assets/hero-bg.png',
-            github: 'https://github.com',
-            live: 'https://example.com'
+            tech: ['Flask', 'Python', 'HTML5', 'CSS3', 'JavaScript', 'SQLite'],
+            img: 'assets/document_tracking.png',
+            github: 'https://github.com/z0diax/document-tracking-system',
+            live: '#'
         },
-        '2': {
-            title: 'Velo Crypto Wallet',
-            category: 'Mobile Application',
-            desc: 'Velo is a secure, decentralized crypto wallet application built for managing multi-chain digital assets. It simplifies complex Web3 operations with an elegant, intuitive UI/UX, biometric security triggers, and high-performance cross-chain swapping protocols.',
+        'kees-desz': {
+            title: 'Kees & Desz Wedding RSVP',
+            category: 'Web Application',
+            desc: 'A bespoke, romantic wedding invitation and RSVP portal. Built as a high-performance single page application, it features a custom countdown timeline, responsive touch gallery, interactive location mapping, and a functional guest registry and RSVP form.',
             features: [
-                'Created responsive, lag-free list views rendering 1000+ token histories',
-                'Utilized Keychain/Keystore wrappers for enterprise-grade biometric security',
-                'Developed local SQL database caching for offline portfolio tracking',
-                'Connected with Uniswap and 1inch routers for instant asset swaps'
+                'Designed a responsive countdown timer to the wedding date using vanilla JS',
+                'Integrated full RSVP capture form saving guest list details directly',
+                'Styled with an elegant custom gold-and-floral visual theme with smooth scroll animations',
+                'Optimized web assets for 100% mobile readiness and fast asset delivery'
             ],
-            tech: ['React Native', 'TypeScript', 'Web3.js', 'Ethers.js', 'SQLite', 'Reanimated'],
-            img: 'assets/hero-bg.png',
-            github: 'https://github.com',
-            live: 'https://example.com'
+            tech: ['HTML5', 'CSS3', 'JavaScript', 'Vercel', 'Responsive Design'],
+            img: 'assets/wedding_rsvp.png',
+            github: 'https://github.com/z0diax/kees-desz',
+            live: 'https://kees-desz.vercel.app'
         },
-        '3': {
-            title: 'Nove Smart Home',
-            category: 'UI/UX Design Case Study',
-            desc: 'Nove is a comprehensive visual layout and system design project for a modern IoT home management application. The project focuses on user-centric layouts, dark mode optimizations, customizable widget interfaces, and simplified device-pairing micro-interactions.',
+        'fantastic-octo-potato': {
+            title: 'Katitirok Art Gallery',
+            category: 'Web Application',
+            desc: 'Katitirok is a modern, highly interactive digital art and media archive. Using a clean grid layout with glassmorphic elements, it displays high-fidelity graphics with smooth touch support and modern styling, creating a premium virtual viewing experience.',
             features: [
-                'Conducted extensive user research interviews and usability testing with 15 participants',
-                'Designed 40+ high-fidelity frames covering device setups and configuration flows',
-                'Developed micro-interaction prototypes showing seamless switch and dial triggers',
-                'Created a reusable typography and color system based on W3C accessibility specs'
+                'Designed responsive masonry-style grids using CSS Grid and flex models',
+                'Implemented Intersection Observer lazy-loading to optimize render performance',
+                'Created a custom image lightbox for distraction-free art exploration',
+                'Designed a premium dark mode layout with glowing gradient background blobs'
             ],
-            tech: ['Figma', 'Prototyping', 'User Research', 'Design Systems', 'Illustrator'],
-            img: 'assets/hero-bg.png',
-            github: 'https://github.com',
-            live: 'https://example.com'
+            tech: ['JavaScript', 'CSS Grid', 'HTML5', 'Intersection Observer', 'Responsive Design'],
+            img: 'assets/katitirok_gallery.png',
+            github: 'https://github.com/z0diax/fantastic-octo-potato',
+            live: 'https://katitirok-gallery.vercel.app'
+        },
+        'crosswordpuzzle': {
+            title: 'Interactive Crossword Challenge',
+            category: 'Web Application',
+            desc: 'A specialized web crossword game built for National Women’s Month. Solvers register, solve clues highlighting Filipina history and women\'s equality, and submit their completion stats in a smooth, mobile-friendly interface.',
+            features: [
+                'Engineered interactive cell focus-navigation and automatic clue highlights',
+                'Implemented accurate solve-time stopwatch utilizing high-precision intervals',
+                'Created registration and submission flows saving solver metrics in local storage',
+                'Designed a colorful, responsive theme keeping accessibility guidelines in check'
+            ],
+            tech: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage', 'Mobile Friendly'],
+            img: 'assets/crossword_puzzle.png',
+            github: 'https://github.com/z0diax/crosswordpuzzle',
+            live: 'https://project-rt2qx.vercel.app'
+        },
+        'qr-scanner': {
+            title: 'QR Scanner & Generator',
+            category: 'Desktop Utility',
+            desc: 'A lightweight and modular desktop tool written in Python. It integrates OpenCV and Pyzbar to read QR codes from real-time webcam streams, decode data immediately, and generate high-resolution custom QR codes from text input.',
+            features: [
+                'Integrated OpenCV video capture pipeline for real-time webcam processing',
+                'Leveraged Pyzbar decoders for instantaneous barcode and QR reading',
+                'Designed user-friendly desktop GUI utilizing Tkinter layout libraries',
+                'Built instant custom QR code creator saving high-res PNG outputs'
+            ],
+            tech: ['Python', 'OpenCV', 'Pyzbar', 'Tkinter', 'Pillow'],
+            img: 'assets/qr_scanner.png',
+            github: 'https://github.com/z0diax/qr-scanner',
+            live: '#'
         }
     };
 
@@ -188,6 +218,8 @@ document.addEventListener('DOMContentLoaded', () => {
         modalTitle.textContent = data.title;
         modalDesc.textContent = data.desc;
         modalCategory.textContent = data.category;
+        modalImg.src = data.img;
+        modalImg.alt = data.title;
         
         // Features list
         modalFeatures.innerHTML = '';
@@ -207,8 +239,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Link overrides
-        modalGithub.href = data.github;
-        modalLive.href = data.live;
+        if (data.github && data.github !== '#') {
+            modalGithub.href = data.github;
+            modalGithub.style.display = 'inline-flex';
+        } else {
+            modalGithub.style.display = 'none';
+        }
+
+        if (data.live && data.live !== '#') {
+            modalLive.href = data.live;
+            modalLive.style.display = 'inline-flex';
+        } else {
+            modalLive.style.display = 'none';
+        }
 
         // Open modal
         modal.classList.add('open');
